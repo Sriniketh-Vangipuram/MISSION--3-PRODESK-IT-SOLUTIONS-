@@ -57,6 +57,10 @@ A modern SaaS-style web application that allows users to search for any GitHub p
 - GitHub API
 
 ---
+🎥 Demo Video
+🔗https://youtu.be/crRNY-hrjnA
+
+---
 
 ## 📸 Screenshots
 
