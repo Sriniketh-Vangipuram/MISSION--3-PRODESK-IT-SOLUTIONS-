@@ -102,9 +102,9 @@ A modern SaaS-style web application that allows users to search for any GitHub p
 git clone https://github.com/Sriniketh-Vangipuram/MISSION--3-PRODESK-IT-SOLUTIONS-.git
 
 2. Open index.html in browser
-📹 Demo Video
 
-👉 Watch Demo
+📹 Demo Video
+https://youtu.be/crRNY-hrjnA
 
 📌 Internship Submission Notes
 Built without frameworks (Vanilla JS only)
