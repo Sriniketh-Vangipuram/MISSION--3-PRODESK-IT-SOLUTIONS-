@@ -21,13 +21,17 @@ input.addEventListener("keypress", (e) => {
 
 async function fetchUser() {
   const username = input.value.trim();
-
   if (!username) return;
 
   showLoading();
 
   try {
-    const res = await fetch(`https://api.github.com/users/${username}`);
+    const delay = new Promise(resolve => setTimeout(resolve, 3000));
+
+    //  API call
+    const fetchUserData = fetch(`https://api.github.com/users/${username}`);
+
+    const [res] = await Promise.all([fetchUserData, delay]);
 
     if (!res.ok) throw new Error("User not found");
 
@@ -115,6 +119,13 @@ function showLoading() {
   errorBox.classList.add("hidden");
   profile.classList.add("hidden");
   reposContainer.classList.add("hidden");
+
+  btn.disabled = true;
+}
+
+function hideLoading() {
+  loading.classList.add("hidden");
+  btn.disabled = false;
 }
 
 function showError(msg) {
